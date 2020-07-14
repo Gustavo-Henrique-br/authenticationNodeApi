@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">🔒 <br>
+<h1 align="center" style="text-align: center;">🔒 <br>
 <strong><i>authenticate with node</i></strong>
 </h1>
 
