@@ -15,18 +15,12 @@
 </ul>
 
 ```bash
-$npm i express
-
-$npm i jsonwebtoken
-
-$npm i mongoose
-
-$npm i bcrypt
+$npm i
 ```
  "i" is the "install" abbreviation for npm
+ 'npm i' install all dependencies from the project
 
 <h2 align="center">todo: </h2>
 
 - [x] create password manager system
-- [ ] frontend with Reactjs
 - [x] organizate project
