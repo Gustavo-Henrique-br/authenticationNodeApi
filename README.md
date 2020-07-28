@@ -17,7 +17,7 @@
 ```bash
 $npm i
 ```
- "i" is the "install" abbreviation for npm
+ "i" is the "install" abbreviation for npm <br>
  'npm i' install all dependencies from the project
 
 <h2 align="center">todo: </h2>
