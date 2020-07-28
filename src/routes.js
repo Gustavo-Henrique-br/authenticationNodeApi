@@ -15,7 +15,10 @@ routes.post('/authenticate', userController.auth)
 routes.post('/register', userController.register)
 
 routes.use('/projects', authMiddleware)
-routes.get('/projects', projectController.ok)
-
+routes.post('/projects', projectController.create)
+routes.get('/projects/all', projectController.index)
+routes.get('/projects//filter/:id', projectController.userProjects)
+routes.put('/projects/update/:id', projectController.update)
+routes.delete('/projects/destroy/:id', projectController.delete)
 
 module.exports = routes

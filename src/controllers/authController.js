@@ -2,12 +2,13 @@ const express = require('express');
 const mongoose= require('mongoose')
 const bcrypt =  require('bcrypt')
 const jwt =     require('jsonwebtoken')
-const authConfig = require('../config/auth.json')
+const dotenv = require('dotenv').config();
+const authConfig = process.env.AUTH
 
 const User = mongoose.model('User')
 
 function generateToken (params = {}) {
-    return jwt.sign(params, authConfig.secret, {
+    return jwt.sign(params, authConfig, {
         expiresIn: 86400,
     })
 }
@@ -65,7 +66,7 @@ module.exports = {
     },
 
     async show(req,res) {
-        const filteredUser = await User.findById(req.params.id);
+        const filteredUser = await User.find(req.params.id);
 
         return res.json(filteredUser)
     }
