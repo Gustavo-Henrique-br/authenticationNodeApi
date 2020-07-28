@@ -27,6 +27,6 @@ $npm i bcrypt
 
 <h2 align="center">todo: </h2>
 
-- [ ] create password manager system
+- [x] create password manager system
 - [ ] frontend with Reactjs
-- [ ] organizate project
+- [x] organizate project
